@@ -1,181 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sempadan Asasi Sdn Bhd</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sempadan Asasi Sdn Bhd | Palm Oil Fruit Producer</title>
+    <style>
+      :root {
+        --primary: #1f6a36;
+        --primary-dark: #145027;
+        --accent: #d7f0dd;
+        --text: #1e2930;
+        --muted: #5f6b73;
+        --surface: #ffffff;
+        --bg: #f6f8f7;
+      }
 
-<style>
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f4f4f4;
-    color:#333;
-}
+      * {
+        box-sizing: border-box;
+      }
 
-header{
-    background:#1b5e20;
-    color:white;
-    padding:20px 0;
-    text-align:center;
-}
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--text);
+        background: var(--bg);
+      }
 
-nav{
-    background:#2e7d32;
-    padding:10px;
-    text-align:center;
-}
+      a {
+        color: inherit;
+      }
 
-nav a{
-    color:white;
-    margin:0 15px;
-    text-decoration:none;
-    font-weight:bold;
-}
+      .container {
+        width: min(1100px, 92%);
+        margin: 0 auto;
+      }
 
-.hero{
-    background:url("https://images.unsplash.com/photo-1594817040198-69a5f6bb77eb") center/cover;
-    height:400px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:white;
-    text-align:center;
-}
+      header {
+        background: linear-gradient(135deg, rgba(20, 80, 39, 0.92), rgba(31, 106, 54, 0.9)),
+          radial-gradient(circle at top right, rgba(255, 255, 255, 0.2), transparent 45%);
+        color: #fff;
+      }
 
-.hero h1{
-    background:rgba(0,0,0,0.5);
-    padding:20px;
-}
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+      }
 
-.container{
-    width:90%;
-    max-width:1100px;
-    margin:auto;
-    padding:40px 0;
-}
+      .brand {
+        font-weight: 700;
+        letter-spacing: 0.3px;
+      }
 
-.section-title{
-    text-align:center;
-    margin-bottom:20px;
-    color:#1b5e20;
-}
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1.2rem;
+      }
 
-.card{
-    background:white;
-    padding:20px;
-    margin:15px 0;
-    border-radius:8px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
+      nav a {
+        text-decoration: none;
+        font-weight: 600;
+        opacity: 0.95;
+      }
 
-footer{
-    background:#1b5e20;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-</style>
+      .hero {
+        padding: 4.4rem 0 4rem;
+      }
 
-</head>
+      .hero h1 {
+        margin: 0;
+        font-size: clamp(1.9rem, 4vw, 3rem);
+        line-height: 1.2;
+        max-width: 20ch;
+      }
 
-<body>
+      .hero p {
+        margin: 1rem 0 0;
+        max-width: 62ch;
+        color: #eff6f0;
+      }
 
-<header>
-<h1>Sempadan Asasi Sdn Bhd</h1>
-<p>Trusted Palm Oil Fruit Producer</p>
-</header>
+      section {
+        padding: 3.3rem 0;
+      }
 
-<nav>
-<a href="#about">About</a>
-<a href="#production">Production</a>
-<a href="#sustainability">Sustainability</a>
-<a href="#contact">Contact</a>
-</nav>
+      h2 {
+        margin: 0 0 1rem;
+        font-size: clamp(1.45rem, 3vw, 2rem);
+        color: var(--primary-dark);
+      }
 
-<section class="hero">
-<h1>Delivering Quality Palm Oil Fresh Fruit Bunches</h1>
-</section>
+      .section-intro {
+        color: var(--muted);
+        margin-bottom: 1.3rem;
+        max-width: 70ch;
+      }
 
-<div class="container">
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+      }
 
-<section id="about">
-<h2 class="section-title">About Us</h2>
+      .card {
+        background: var(--surface);
+        border-radius: 12px;
+        border: 1px solid #e7ece8;
+        padding: 1.2rem;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+      }
 
-<div class="card">
-<p>
-Sempadan Asasi Sdn Bhd is an agricultural company specializing in the
-production of high-quality palm oil fresh fruit bunches (FFB).
-Our plantation operations focus on productivity, sustainability,
-and responsible land management.
-</p>
+      .card h3 {
+        margin-top: 0;
+        color: var(--primary);
+      }
 
-<p>
-With strong experience in plantation management, we aim to
-support the palm oil supply chain while contributing to the
-growth of Malaysia’s agricultural sector.
-</p>
-</div>
-</section>
+      .highlight {
+        background: var(--accent);
+        border-left: 4px solid var(--primary);
+        padding: 1rem 1.1rem;
+        border-radius: 8px;
+      }
 
-<section id="production">
-<h2 class="section-title">Our Production</h2>
+      .contact-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 1.2rem;
+      }
 
-<div class="card">
-<h3>Palm Oil Fresh Fruit Bunches</h3>
+      .details p {
+        margin: 0.45rem 0;
+      }
 
-<p>
-We produce high quality Fresh Fruit Bunches (FFB) from well managed
-oil palm plantations. Our harvesting practices ensure
-optimal fruit maturity and consistent supply to palm oil mills.
-</p>
+      form {
+        background: var(--surface);
+        border: 1px solid #e7ece8;
+        border-radius: 12px;
+        padding: 1rem;
+      }
 
-<ul>
-<li>Well managed plantation operations</li>
-<li>Consistent harvesting cycles</li>
-<li>Quality controlled fruit production</li>
-<li>Efficient logistics to palm oil mills</li>
-</ul>
+      label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 0.35rem;
+      }
 
-</div>
-</section>
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.7rem;
+        border: 1px solid #cdd8cf;
+        border-radius: 8px;
+        font: inherit;
+        margin-bottom: 0.9rem;
+      }
 
-<section id="sustainability">
-<h2 class="section-title">Sustainability</h2>
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
 
-<div class="card">
-<p>
-Sempadan Asasi Sdn Bhd is committed to sustainable agriculture.
-We continuously improve soil health, responsible land use,
-and environmentally friendly plantation practices.
-</p>
+      button {
+        border: 0;
+        border-radius: 8px;
+        background: var(--primary);
+        color: #fff;
+        padding: 0.7rem 1.1rem;
+        font-weight: 700;
+        cursor: pointer;
+      }
 
-<ul>
-<li>Soil improvement practices</li>
-<li>Efficient resource management</li>
-<li>Environmental responsibility</li>
-</ul>
-</div>
+      button:hover {
+        background: var(--primary-dark);
+      }
 
-</section>
+      footer {
+        background: #132f1f;
+        color: #ebf3ee;
+        padding: 1.3rem 0;
+        text-align: center;
+      }
 
-<section id="contact">
-<h2 class="section-title">Contact Us</h2>
+      @media (max-width: 850px) {
+        .topbar {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.65rem;
+        }
 
-<div class="card">
-<p><strong>Company:</strong> Sempadan Asasi Sdn Bhd</p>
-<p><strong>Email:</strong> info@sempadanasasi.com</p>
-<p><strong>Phone:</strong> +60-XXX-XXXX</p>
-<p><strong>Location:</strong> Malaysia</p>
-</div>
+        nav ul {
+          flex-wrap: wrap;
+          gap: 0.8rem;
+        }
 
-</section>
+        .card-grid,
+        .contact-wrap {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container topbar">
+        <div class="brand">Sempadan Asasi Sdn Bhd</div>
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container hero">
+        <h1>Reliable Palm Oil Fresh Fruit Bunch Production</h1>
+        <p>
+          We are committed to delivering quality palm oil fruit through consistent plantation practices,
+          responsible cultivation, and dependable supply partnerships.
+        </p>
+      </div>
+    </header>
 
-</div>
+    <main>
+      <section id="about" class="container">
+        <h2>About Us</h2>
+        <p class="section-intro">
+          Sempadan Asasi Sdn Bhd is a Malaysia-based agricultural company focused on producing high-quality
+          palm oil fresh fruit bunches (FFB). Our operations combine field expertise with sustainable
+          estate management to serve downstream processors and long-term partners.
+        </p>
+        <div class="highlight">
+          <strong>Our Mission:</strong> To support the palm oil value chain with reliable fruit production,
+          responsible land stewardship, and continuous improvement in quality and efficiency.
+        </div>
+      </section>
 
-<footer>
-<p>© 2026 Sempadan Asasi Sdn Bhd. All rights reserved.</p>
-</footer>
+      <section id="products" class="container">
+        <h2>Products &amp; Services</h2>
+        <p class="section-intro">
+          We provide quality-driven output and plantation support practices designed for consistency,
+          traceability, and operational reliability.
+        </p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Fresh Fruit Bunches (FFB)</h3>
+            <p>
+              Harvested at optimal maturity levels to help ensure oil extraction performance and
+              steady processing outcomes.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Harvest Planning</h3>
+            <p>
+              Structured harvesting cycles and field monitoring to maintain consistency in quantity
+              and fruit quality.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Supply Reliability</h3>
+            <p>
+              Coordinated delivery workflows to support timely dispatch from plantation to palm oil mills.
+            </p>
+          </article>
+        </div>
+      </section>
 
-</body>
+      <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <p class="section-intro">We welcome business inquiries and partnership opportunities.</p>
+        <div class="contact-wrap">
+          <aside class="card details">
+            <p><strong>Company:</strong> Sempadan Asasi Sdn Bhd</p>
+            <p><strong>Email:</strong> info@sempadanasasi.com</p>
+            <p><strong>Phone:</strong> +60 3-1234 5678</p>
+            <p><strong>Address:</strong> Selangor, Malaysia</p>
+            <p><strong>Office Hours:</strong> Monday - Friday, 8:30 AM - 5:30 PM</p>
+          </aside>
+
+          <form action="#" method="post" aria-label="Contact form">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required />
+
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© 2026 Sempadan Asasi Sdn Bhd. All rights reserved.</div>
+    </footer>
+  </body>
 </html>
