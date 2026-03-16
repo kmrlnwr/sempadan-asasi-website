@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sempadan Asasi Sdn Bhd</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#1b5e20;
+    color:white;
+    padding:20px 0;
+    text-align:center;
+}
+
+nav{
+    background:#2e7d32;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    background:url("https://images.unsplash.com/photo-1594817040198-69a5f6bb77eb") center/cover;
+    height:400px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    background:rgba(0,0,0,0.5);
+    padding:20px;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:20px;
+    color:#1b5e20;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:15px 0;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Sempadan Asasi Sdn Bhd</h1>
+<p>Trusted Palm Oil Fruit Producer</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#production">Production</a>
+<a href="#sustainability">Sustainability</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<h1>Delivering Quality Palm Oil Fresh Fruit Bunches</h1>
+</section>
+
+<div class="container">
+
+<section id="about">
+<h2 class="section-title">About Us</h2>
+
+<div class="card">
+<p>
+Sempadan Asasi Sdn Bhd is an agricultural company specializing in the
+production of high-quality palm oil fresh fruit bunches (FFB).
+Our plantation operations focus on productivity, sustainability,
+and responsible land management.
+</p>
+
+<p>
+With strong experience in plantation management, we aim to
+support the palm oil supply chain while contributing to the
+growth of Malaysia’s agricultural sector.
+</p>
+</div>
+</section>
+
+<section id="production">
+<h2 class="section-title">Our Production</h2>
+
+<div class="card">
+<h3>Palm Oil Fresh Fruit Bunches</h3>
+
+<p>
+We produce high quality Fresh Fruit Bunches (FFB) from well managed
+oil palm plantations. Our harvesting practices ensure
+optimal fruit maturity and consistent supply to palm oil mills.
+</p>
+
+<ul>
+<li>Well managed plantation operations</li>
+<li>Consistent harvesting cycles</li>
+<li>Quality controlled fruit production</li>
+<li>Efficient logistics to palm oil mills</li>
+</ul>
+
+</div>
+</section>
+
+<section id="sustainability">
+<h2 class="section-title">Sustainability</h2>
+
+<div class="card">
+<p>
+Sempadan Asasi Sdn Bhd is committed to sustainable agriculture.
+We continuously improve soil health, responsible land use,
+and environmentally friendly plantation practices.
+</p>
+
+<ul>
+<li>Soil improvement practices</li>
+<li>Efficient resource management</li>
+<li>Environmental responsibility</li>
+</ul>
+</div>
+
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact Us</h2>
+
+<div class="card">
+<p><strong>Company:</strong> Sempadan Asasi Sdn Bhd</p>
+<p><strong>Email:</strong> info@sempadanasasi.com</p>
+<p><strong>Phone:</strong> +60-XXX-XXXX</p>
+<p><strong>Location:</strong> Malaysia</p>
+</div>
+
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 Sempadan Asasi Sdn Bhd. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
